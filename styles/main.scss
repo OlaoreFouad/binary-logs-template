@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./base/typography";
+
+.article-list__item-details .info span:not(:last-child)::after {
+  content: "\2022";
+  margin: 0 0.5rem;
+}
+
+.article-list__item {
+  transition: all 0.4s;
+  backface-visibility: hidden;
+}
+
+.article-list__item-read {
+  display: none;
+}
+
+.article-list__item:hover {
+  background-color: white;
+  cursor: pointer;
+
+  .article-list__item-read {
+    display: block;
+  }
+
+  h1,
+  p,
+  span {
+    color: black;
+  }
+}
+
+.article-list__item-image {
+  width: 10rem;
+  height: 5rem;
+}

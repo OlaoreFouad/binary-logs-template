@@ -1,0 +1,40 @@
+@font-face {
+  font-family: GeneralSansBold;
+  src: url("../assets/fonts/general-sans-bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: GeneralSansMedium;
+  src: url("../assets/fonts/general-sans-medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: GeneralSansRegular;
+  src: url("../assets/fonts/general-sans-regular.otf");
+  font-weight: 400;
+}
+
+* {
+  font-family: GeneralSansRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption,
+b {
+  font-family: GeneralSansBold;
+}
+
+span,
+p,
+a,
+article,
+div {
+  font-family: GeneralSansRegular;
+}

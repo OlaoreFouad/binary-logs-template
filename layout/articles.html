@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="section-articles h-full bg-black py-24">
+      <div class="article-list mx-auto w-[80%]">
+        <div id="article-item-0" class="article-list__item flex py-8 px-8">
+          <h1 class="article-list__item-title text-white text-4xl flex-1">
+            I Built an App in 6 Hours that Makes $1,500/Mo
+          </h1>
+          <div class="article-list__item-details flex-1 flex items-center">
+            <div class="w-[50%] flex flex-col gap-4">
+              <p class="description block text-[#FFFFFFB2] text-xl">
+                Copy my strategy! — Here is the simple web app I created in 6
+                hours.
+              </p>
+              <div class="info text-xs text-[#FFFFFFB2]">
+                <span>16th March, 2023</span>
+                <span>5 min read</span>
+                <span>Thoughts</span>
+              </div>
+            </div>
+
+            <button
+              class="article-list__item-read bg-black text-white py-2 px-4 rounded-xl"
+            >
+              Read article
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var elem = document.getElementById("article-item-0");
+      // this copies the entire element, including the id
+
+      for (let cnt = 1; cnt < 10; cnt++) {
+        const articleItemId = `article-item-${cnt}`;
+        var newElem = elem.cloneNode(true);
+        // generic way to make sure you insert properly
+        var before = elem.nextSibling;
+        // there's no insertAfter, only insertBefore, which is why we found the before
+        elem.parentNode.insertBefore(newElem, before);
+      }
+    </script>
+  </body>
+</html>

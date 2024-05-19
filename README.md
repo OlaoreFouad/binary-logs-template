@@ -1,1 +1,1 @@
-## empty
+## BinaryLogs Blog - The frontend template.

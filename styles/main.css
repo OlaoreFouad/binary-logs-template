@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: GeneralSansBold;
+  src: url("../assets/fonts/general-sans-bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: GeneralSansMedium;
+  src: url("../assets/fonts/general-sans-medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: GeneralSansRegular;
+  src: url("../assets/fonts/general-sans-regular.otf");
+  font-weight: 400;
+}
+* {
+  font-family: GeneralSansRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption,
+b {
+  font-family: GeneralSansBold;
+}
+
+span,
+p,
+a,
+article,
+div {
+  font-family: GeneralSansRegular;
+}
+
+.article-list__item-details .info span:not(:last-child)::after {
+  content: "•";
+  margin: 0 0.5rem;
+}
+
+.article-list__item {
+  transition: all 0.4s;
+  backface-visibility: hidden;
+}
+
+.article-list__item-read {
+  display: none;
+}
+
+.article-list__item:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.article-list__item:hover .article-list__item-read {
+  display: block;
+}
+.article-list__item:hover h1,
+.article-list__item:hover p,
+.article-list__item:hover span {
+  color: black;
+}
+
+.article-list__item-image {
+  width: 10rem;
+  height: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

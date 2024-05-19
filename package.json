@@ -1,0 +1,25 @@
+{
+  "name": "binarylogs-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlaoreFouad/binary-logs-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlaoreFouad/binary-logs-template/issues"
+  },
+  "homepage": "https://github.com/OlaoreFouad/binary-logs-template#readme",
+  "dependencies": {
+    "sass": "^1.77.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
